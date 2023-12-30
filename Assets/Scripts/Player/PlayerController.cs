@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
         bool swimCheck = false;
         if(inWater){
             RaycastHit hit;
-            if (Physics.Raycast(new Vector3(playerTransform.position.x, playerTransform.position.y + 0.5f, playerTransform.position.z), Vector3.down, out hit, Mathf.Infinity, waterMask))
+            if (Physics.Raycast(new Vector3(playerTransform.position.x, playerTransform.position.y + 0.7f, playerTransform.position.z), Vector3.down, out hit, Mathf.Infinity, waterMask))
             {
                 if (hit.distance < 0.1f)
                 {
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
             }
         }
         isSwimming = swimCheck;
-        Debug.Log("isSwiming: " + isSwimming);
+        // Debug.Log("isSwiming: " + isSwimming);
     }
     
 

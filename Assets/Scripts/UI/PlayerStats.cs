@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
         // initialise the statBars
         for (int i=0; i<maxStats.Count; i++)
         {
-            statBars[i].maxValue = maxStats[i];
+            //statBars[i].maxValue = maxStats[i];
         }
     }
 
@@ -48,11 +48,11 @@ public class PlayerStats : MonoBehaviour
         }
 
 
-        for(int i=0; i<maxStats.Count; i++)
-        {
-            statBars[i].value = currentStats[i];
-            statNums[i].text = currentStats[i].ToString();
-        }
+        // for(int i=0; i<maxStats.Count; i++)
+        // {
+        //     statBars[i].value = currentStats[i];
+        //     statNums[i].text = currentStats[i].ToString();
+        // }
     }
 
     IEnumerator DecreaseStats(int stat, int interval, int amount)
